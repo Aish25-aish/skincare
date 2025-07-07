@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - NatureBloom Organics</title>
+    <meta name="description" content="Finalize your purchase at NatureBloom Organics. Enter your details and place your order for organic skincare products.">
+    <meta name="keywords" content="checkout, NatureBloom Organics, complete order, organic skincare purchase, payment, shipping, order summary">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Playfair Display for headings, Lato for body text -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif; /* Body text font */
+            background-color: #f8fafc; /* Very light, cool-toned background for a modern feel */
+            color: #333; /* Soft dark gray for body text */
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif; /* Headings font */
+        }
+        .text-brand-green {
+            color: #6a994e; /* Consistent sophisticated green */
+        }
+        .text-heading-dark {
+            color: #2c3e50; /* Darker, richer text color for headings */
+        }
+        .rounded-3xl-custom {
+            border-radius: 1.5rem; /* Even larger, softer rounded corners */
+        }
+        .shadow-soft {
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); /* Very soft, diffused shadow */
+        }
+        .shadow-soft-hover:hover {
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12); /* Slightly more pronounced on hover */
+        }
+        .btn-primary {
+            background-color: #6a994e; /* A sophisticated, muted green */
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Softer shadow */
+        }
+        .btn-primary:hover {
+            background-color: #5b8443; /* Darker on hover */
+            transform: translateY(-2px); /* Subtle lift */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+        }
+        .form-input {
+            border: 1px solid #e2e8f0; /* Light border for inputs */
+            padding: 0.75rem 1rem;
+            border-radius: 0.75rem; /* Rounded input corners */
+            width: 100%;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: #6a994e; /* Green border on focus */
+            box-shadow: 0 0 0 3px rgba(106, 153, 78, 0.2); /* Soft green focus ring */
+        }
+        .checkout-section {
+            background: linear-gradient(135deg, #e6f7f2 0%, #d1ede1 100%); /* Consistent with hero section gradient */
+            padding: 4rem 1rem;
+        }
+        .checkout-card {
+            background-color: #ffffff;
+            padding: 2.5rem;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            text-align: left;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased">
+
+    <!-- Header Section (Consistent with other pages) -->
+    <header class="bg-white py-5 shadow-soft sticky top-0 z-50">
+        <div class="container mx-auto px-8 flex justify-between items-center">
+            <!-- Logo Image and Brand Name -->
+            <a href="index.html" class="flex items-center group">
+                <img src="https://www.creativefabrica.com/wp-content/uploads/2021/12/01/Skincare-Logo-Design-Graphics-21027148-2-580x387.png" alt="NatureBloom Organics Logo" class="h-14 mr-4 rounded-lg shadow-md transition-transform duration-300 group-hover:scale-105">
+                <span class="text-3xl font-extrabold text-heading-dark tracking-tight">NatureBloom Organics</span>
+            </a>
+            <nav>
+                <ul class="flex space-x-10">
+                    <li><a href="index.html" class="text-gray-700 hover:text-brand-green font-medium text-lg transition duration-300 ease-in-out">Home</a></li>
+                    <li><a href="products.html" class="text-gray-700 hover:text-brand-green font-medium text-lg transition duration-300 ease-in-out">Products</a></li>
+                    <li><a href="index.html" class="text-gray-700 hover:text-brand-green font-medium text-lg transition duration-300 ease-in-out">About Us</a></li>
+                    <li><a href="contact.html" class="text-gray-700 hover:text-brand-green font-medium text-lg transition duration-300 ease-in-out">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content - Checkout Section -->
+    <main class="flex-grow checkout-section">
+        <div class="container mx-auto px-8">
+            <h1 class="text-5xl font-bold text-heading-dark text-center mb-16">Finalize Your Order</h1>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+                <!-- Shipping and Payment Details Form -->
+                <div class="lg:col-span-2 bg-white p-10 rounded-3xl-custom shadow-soft">
+                    <h2 class="text-4xl font-bold text-heading-dark mb-8">Shipping & Payment Details</h2>
+                    <form action="thanku.html" method="GET" class="space-y-8">
+                        <!-- Shipping Information -->
+                        <div>
+                            <h3 class="text-2xl font-semibold text-heading-dark mb-4">Shipping Information</h3>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label for="fullName" class="block text-lg font-medium text-gray-700 mb-2">Full Name</label>
+                                    <input type="text" id="fullName" name="fullName" class="form-input" placeholder="John Doe" required>
+                                </div>
+                                <div>
+                                    <label for="address" class="block text-lg font-medium text-gray-700 mb-2">Address</label>
+                                    <input type="text" id="address" name="address" class="form-input" placeholder="123 Main St" required>
+                                </div>
+                                <div>
+                                    <label for="city" class="block text-lg font-medium text-gray-700 mb-2">City</label>
+                                    <input type="text" id="city" name="city" class="form-input" placeholder="Anytown" required>
+                                </div>
+                                <div>
+                                    <label for="zip" class="block text-lg font-medium text-gray-700 mb-2">Zip Code</label>
+                                    <input type="text" id="zip" name="zip" class="form-input" placeholder="12345" required>
+                                </div>
+                                <div>
+                                    <label for="country" class="block text-lg font-medium text-gray-700 mb-2">Country</label>
+                                    <input type="text" id="country" name="country" class="form-input" placeholder="USA" required>
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-lg font-medium text-gray-700 mb-2">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" class="form-input" placeholder="+1 (555) 123-4567" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Payment Information -->
+                        <div>
+                            <h3 class="text-2xl font-semibold text-heading-dark mb-4">Payment Information</h3>
+                            <div class="space-y-6">
+                                <div>
+                                    <label for="cardNumber" class="block text-lg font-medium text-gray-700 mb-2">Card Number</label>
+                                    <input type="text" id="cardNumber" name="cardNumber" class="form-input" placeholder="XXXX XXXX XXXX XXXX" required>
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                                    <div>
+                                        <label for="expiryDate" class="block text-lg font-medium text-gray-700 mb-2">Expiry Date</label>
+                                        <input type="text" id="expiryDate" name="expiryDate" class="form-input" placeholder="MM/YY" required>
+                                    </div>
+                                    <div>
+                                        <label for="cvv" class="block text-lg font-medium text-gray-700 mb-2">CVV</label>
+                                        <input type="text" id="cvv" name="cvv" class="form-input" placeholder="XXX" required>
+                                    </div>
+                                    <div class="md:col-span-1">
+                                        <label for="cardName" class="block text-lg font-medium text-gray-700 mb-2">Name on Card</label>
+                                        <input type="text" id="cardName" name="cardName" class="form-input" placeholder="John Doe" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="contact.html" class="btn-primary text-white font-bold py-3 px-10 rounded-full text-lg inline-block">
+                            Place Order
+                        </a>
+                    </form>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="checkout-card">
+                    <h2 class="text-4xl font-bold text-heading-dark mb-8">Order Summary</h2>
+                    <div class="space-y-4 text-lg text-gray-700">
+                        <div class="flex justify-between">
+                            <span>Rejuvenating Face Serum</span>
+                            <span>$49.99</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Hydrating Day Cream</span>
+                            <span>$34.50</span>
+                        </div>
+                        <div class="flex justify-between font-semibold border-t pt-4 mt-4 border-gray-200">
+                            <span>Subtotal</span>
+                            <span>$84.49</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Shipping</span>
+                            <span>$5.00</span>
+                        </div>
+                        <div class="flex justify-between font-bold text-2xl border-t pt-4 mt-4 border-gray-300">
+                            <span>Total</span>
+                            <span>$89.49</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 text-sm mt-8">
+                        By clicking "Place Order", you agree to our <a href="#" class="text-brand-green hover:underline">Terms of Service</a> and <a href="#" class="text-brand-green hover:underline">Privacy Policy</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section (Consistent with other pages) -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-8 text-center">
+            <p class="mb-6 text-lg">&copy; 2025 NatureBloom Organics. All rights reserved.</p>
+            <div class="flex justify-center space-x-10 text-lg mb-8">
+                <a href="#" class="hover:text-white transition duration-300">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition duration-300">Terms of Service</a>
+                <a href="#" class="hover:text-white transition duration-300">FAQ</a>
+                <a href="https://naturebloomorganicsblog.com/skincare-benefits" target="_blank" rel="noopener noreferrer" class="hover:text-white transition duration-300">Our Skincare Blog</a>
+            </div>
+            <div class="text-md">
+                Follow Us:
+                <div class="flex justify-center space-x-6 mt-4">
+                    <a href="#" class="text-gray-400 hover:text-white text-2xl transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white text-2xl transition duration-300"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white text-2xl transition duration-300"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
