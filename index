@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to NatureBloom Organics - Organic Skincare</title>
+    <meta name="description" content="Discover NatureBloom Organics, your source for handcrafted organic skincare made with the purest natural ingredients. Embrace nature's touch for radiant skin.">
+    <meta name="keywords" content="NatureBloom Organics, organic skincare, natural skincare, handcrafted beauty, radiant skin, pure ingredients, cruelty-free, sustainable beauty">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Playfair Display for headings, Lato for body text -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif; /* Body text font */
+            background-color: #f8fafc; /* Very light, cool-toned background for a modern feel */
+            color: #333; /* Soft dark gray for body text */
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif; /* Headings font */
+        }
+        .hero-section {
+            /* Changed to a softer, lighter green-blue gradient */
+            background: linear-gradient(135deg, #e6f7f2 0%, #d1ede1 100%); /* Light teal to light mint green */
+            position: relative;
+            overflow: hidden;
+            padding-top: 8rem; /* More top padding */
+            padding-bottom: 8rem; /* More bottom padding */
+        }
+        .hero-section::before {
+            /* Subtle, decorative overlay - faint diagonal lines */
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: repeating-linear-gradient(
+                45deg,
+                rgba(255,255,255,0.05),
+                rgba(255,255,255,0.05) 5px,
+                transparent 5px,
+                transparent 10px
+            );
+            pointer-events: none;
+            opacity: 0.7; /* Make it slightly more visible */
+        }
+        .btn-primary {
+            background-color: #6a994e; /* A sophisticated, muted green */
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Softer shadow */
+        }
+        .btn-primary:hover {
+            background-color: #5b8443; /* Darker on hover */
+            transform: translateY(-2px); /* Subtle lift */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+        }
+        .section-bg-light {
+            background-color: #ffffff; /* Crisp white for subtle contrast against body background */
+        }
+        .text-brand-green {
+            color: #6a994e; /* Consistent sophisticated green */
+        }
+        .text-heading-dark {
+            color: #2c3e50; /* Darker, richer text color for headings */
+        }
+        .rounded-3xl-custom {
+            border-radius: 1.5rem; /* Even larger, softer rounded corners */
+        }
+        .shadow-soft {
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); /* Very soft, diffused shadow */
+        }
+        .shadow-soft-hover:hover {
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12); /* Slightly more pronounced on hover */
+        }
+        /* Dark background for CTA section */
+        .cta-dark-bg {
+            background-color: #2c3e50; /* Dark charcoal/navy for strong contrast */
+        }
+        /* Enhanced text shadow for hero heading */
+        .hero-heading-shadow {
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased">
+
+    <!-- Header Section -->
+    <header class="bg-white py-5 shadow-soft sticky top-0 z-50">
+        <div class="container mx-auto px-8 flex justify-between items-center">
+            <!-- Logo Image and Brand Name -->
+            <a href="index.html" class="flex items-center group">
+                <img src="https://www.creativefabrica.com/wp-content/uploads/2021/12/01/Skincare-Logo-Design-Graphics-21027148-2-580x387.png" alt="NatureBloom Organics Logo" class="h-14 mr-4 rounded-lg shadow-md transition-transform duration-300 group-hover:scale-105">
+                <span class="text-3xl font-extrabold text-heading-dark tracking-tight">NatureBloom Organics</span>
+            </a>
+            <nav>
+                <ul class="flex space-x-10">
+                    <li><a href="index.html" class="text-brand-green font-medium text-lg transition duration-300 ease-in-out">Home</a></li>
+                    <li><a href="products.html" class="text-gray-700 hover:text-brand-green font-medium text-lg transition duration-300 ease-in-out">Products</a></li>
+                    <li><a href="#" class="text-gray-700 hover:text-brand-green font-medium text-lg transition duration-300 ease-in-out">About Us</a></li>
+                    <li><a href="contact.html" class="text-gray-700 hover:text-brand-green font-medium text-lg transition duration-300 ease-in-out">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="flex-grow flex items-center justify-center hero-section text-heading-dark">
+        <div class="text-center max-w-5xl mx-auto px-6 relative z-10">
+            <h1 class="text-6xl md:text-7xl lg:text-8xl font-extrabold leading-tight mb-6 hero-heading-shadow">
+                Embrace Nature's Purest Touch for Radiant Skin
+            </h1>
+            <p class="text-2xl md:text-3xl font-light mb-12 text-gray-700 opacity-90">
+                Discover our exquisite collection of handcrafted organic skincare, lovingly made with the purest ingredients from Mother Earth.
+            </p>
+            <a href="products.html" class="inline-block btn-primary text-white font-bold py-4 px-12 rounded-full text-xl uppercase tracking-wide focus:outline-none focus:ring-4 focus:ring-brand-green focus:ring-opacity-50">
+                Explore Our Products
+            </a>
+        </div>
+    </main>
+
+    <!-- About Section -->
+    <section class="py-20 section-bg-light">
+        <div class="container mx-auto px-8 text-center">
+            <h2 class="text-5xl font-bold text-heading-dark mb-12">Our Philosophy: Purity & Passion</h2>
+            <p class="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed mb-16">
+                At NatureBloom Organics, we are deeply committed to harnessing the profound power of natural ingredients to nurture and revitalize your skin. Every product is a testament to our dedication to sustainable practices, ethical sourcing, and a cruelty-free approach, ensuring beauty that is kind to both you and our precious planet. <a href="products.html" class="text-brand-green hover:underline font-semibold">View our full product range here.</a> Experience the transformative difference of truly authentic organic beauty.
+            </p>
+            <!-- Image added here -->
+            <div class="mb-16">
+                <img src="https://media.istockphoto.com/id/853963640/photo/natural-organic-extraction-and-green-herbal-leaves-flower-aroma-essence-solution-in-laboratory.jpg?s=612x612&w=0&k=20&c=csH-77yfqoM9BfxQcdHJO85MolmLFDJO08gpEZP0Kmw="
+                     alt="Natural Organic Extraction"
+                     class="mx-auto w-full md:w-3/4 lg:w-1/2 rounded-3xl-custom shadow-soft">
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="bg-white p-10 rounded-3xl-custom shadow-soft hover:shadow-soft-hover transition-all duration-300">
+                    <i class="fas fa-leaf text-5xl text-brand-green mb-6"></i>
+                    <h3 class="text-3xl font-semibold text-heading-dark mb-4">Pure Ingredients</h3>
+                    <p class="text-gray-600 leading-relaxed">Sourced from the finest organic farms, ensuring maximum potency and purity in every drop.</p>
+                </div>
+                <div class="bg-white p-10 rounded-3xl-custom shadow-soft hover:shadow-soft-hover transition-all duration-300">
+                    <i class="fas fa-seedling text-5xl text-brand-green mb-6"></i>
+                    <h3 class="text-3xl font-semibold text-heading-dark mb-4">Sustainable Practices</h3>
+                    <p class="text-gray-600 leading-relaxed">Committed to eco-friendly methods that protect our environment for future generations.</p>
+                </div>
+                <div class="bg-white p-10 rounded-3xl-custom shadow-soft hover:shadow-soft-hover transition-all duration-300">
+                    <i class="fas fa-paw text-5xl text-brand-green mb-6"></i>
+                    <h3 class="text-3xl font-semibold text-heading-dark mb-4">Cruelty-Free</h3>
+                    <p class="text-gray-600 leading-relaxed">Our products are never tested on animals, reflecting our deep respect for all life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-20 cta-dark-bg text-white text-center">
+        <div class="container mx-auto px-8">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 drop-shadow-sm">Ready to Experience Nature's Best?</h2>
+            <p class="text-xl md:text-2xl mb-10 opacity-90">Join the NatureBloom family and transform your skincare routine with organic goodness.</p>
+            <a href="products.html" class="inline-block bg-white text-brand-green font-bold py-4 px-12 rounded-full text-xl uppercase tracking-wide shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
+                Shop Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-8 text-center">
+            <p class="mb-6 text-lg">&copy; 2025 NatureBloom Organics. All rights reserved.</p>
+            <div class="flex justify-center space-x-10 text-lg mb-8">
+                <a href="#" class="hover:text-white transition duration-300">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition duration-300">Terms of Service</a>
+                <a href="#" class="hover:text-white transition duration-300">FAQ</a>
+                <a href="https://naturebloomorganicsblog.com/skincare-benefits" target="_blank" rel="noopener noreferrer" class="hover:text-white transition duration-300">Our Skincare Blog</a>
+            </div>
+            <div class="text-md">
+                Follow Us:
+                <div class="flex justify-center space-x-6 mt-4">
+                    <a href="#" class="text-gray-400 hover:text-white text-2xl transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white text-2xl transition duration-300"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white text-2xl transition duration-300"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

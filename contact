@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us & Book - NatureBloom Organics</title>
+    <meta name="description" content="Get in touch with NatureBloom Organics for product inquiries, personalized skincare consultations, or general questions. Find our contact information and office hours.">
+    <meta name="keywords" content="NatureBloom Organics contact, organic skincare contact, book consultation, buy organic products, skincare support, customer service">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Playfair Display for headings, Lato for body text -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif; /* Body text font */
+            background-color: #f8fafc; /* Very light, cool-toned background for a modern feel */
+            color: #333; /* Soft dark gray for body text */
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif; /* Headings font */
+        }
+        .text-brand-green {
+            color: #6a994e; /* Consistent sophisticated green */
+        }
+        .text-heading-dark {
+            color: #2c3e50; /* Darker, richer text color for headings */
+        }
+        .rounded-3xl-custom {
+            border-radius: 1.5rem; /* Even larger, softer rounded corners */
+        }
+        .shadow-soft {
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); /* Very soft, diffused shadow */
+        }
+        .shadow-soft-hover:hover {
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12); /* Slightly more pronounced on hover */
+        }
+        .btn-primary {
+            background-color: #6a994e; /* A sophisticated, muted green */
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Softer shadow */
+        }
+        .btn-primary:hover {
+            background-color: #5b8443; /* Darker on hover */
+            transform: translateY(-2px); /* Subtle lift */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+        }
+        .form-input {
+            border: 1px solid #e2e8f0; /* Light border for inputs */
+            padding: 0.75rem 1rem;
+            border-radius: 0.75rem; /* Rounded input corners */
+            width: 100%;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: #6a994e; /* Green border on focus */
+            box-shadow: 0 0 0 3px rgba(106, 153, 78, 0.2); /* Soft green focus ring */
+        }
+        .contact-info-card {
+            background-color: #ffffff;
+            padding: 2.5rem;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            text-align: left;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased">
+
+    <!-- Header Section (Consistent with other pages) -->
+    <header class="bg-white py-5 shadow-soft sticky top-0 z-50">
+        <div class="container mx-auto px-8 flex justify-between items-center">
+            <!-- Logo Image and Brand Name -->
+            <a href="index.html" class="flex items-center group">
+                <img src="https://www.creativefabrica.com/wp-content/uploads/2021/12/01/Skincare-Logo-Design-Graphics-21027148-2-580x387.png" alt="NatureBloom Organics Logo" class="h-14 mr-4 rounded-lg shadow-md transition-transform duration-300 group-hover:scale-105">
+                <span class="text-3xl font-extrabold text-heading-dark tracking-tight">NatureBloom Organics</span>
+            </a>
+            <nav>
+                <ul class="flex space-x-10">
+                    <li><a href="index.html" class="text-gray-700 hover:text-brand-green font-medium text-lg transition duration-300 ease-in-out">Home</a></li>
+                    <li><a href="products.html" class="text-gray-700 hover:text-brand-green font-medium text-lg transition duration-300 ease-in-out">Products</a></li>
+                    <li><a href="index.html" class="text-gray-700 hover:text-brand-green font-medium text-lg transition duration-300 ease-in-out">About Us</a></li>
+                    <li><a href="#" class="text-brand-green font-medium text-lg transition duration-300 ease-in-out">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content - Contact & Booking Section -->
+    <main class="flex-grow py-20 bg-gray-50">
+        <div class="container mx-auto px-8 text-center">
+            <h1 class="text-5xl font-bold text-heading-dark mb-16">Get in Touch to Buy or Book an Appointment</h1>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                <!-- Contact Form -->
+                <div class="bg-white p-10 rounded-3xl-custom shadow-soft">
+                    <h2 class="text-4xl font-bold text-heading-dark mb-8">Send Us a Message</h2>
+                    <form action="thanku.html" method="POST" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-lg font-medium text-gray-700 mb-2 text-left">Your Name</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-lg font-medium text-gray-700 mb-2 text-left">Your Email</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="you@example.com" required>
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-lg font-medium text-gray-700 mb-2 text-left">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-input" placeholder="Inquiry about products..." required>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-lg font-medium text-gray-700 mb-2 text-left">Your Message</label>
+                            <textarea id="message" name="message" rows="6" class="form-input resize-y" placeholder="Tell us how we can help you..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary text-white font-bold py-3 px-10 rounded-full text-lg w-full">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info / Booking Details -->
+                <div class="contact-info-card flex flex-col justify-between h-full">
+                    <div>
+                        <h2 class="text-4xl font-bold text-heading-dark mb-8">Contact Information</h2>
+                        <div class="space-y-6 text-lg text-gray-700">
+                            <p class="flex items-center"><i class="fas fa-map-marker-alt text-brand-green mr-4 text-2xl"></i> 123 Bloom Lane, Organics City, OB 45678</p>
+                            <p class="flex items-center"><i class="fas fa-phone-alt text-brand-green mr-4 text-2xl"></i> +1 (555) 123-4567</p>
+                            <p class="flex items-center"><i class="fas fa-envelope text-brand-green mr-4 text-2xl"></i> info@naturebloom.com</p>
+                            <p class="flex items-center"><i class="fas fa-clock text-brand-green mr-4 text-2xl"></i> Mon - Fri: 9:00 AM - 5:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="mt-12">
+                        <h2 class="text-4xl font-bold text-heading-dark mb-6">Contact to Buy</h2>
+                        <p class="text-gray-700 mb-6">Have questions about a specific product or wish to place an order? You can also <a href="products.html" class="text-brand-green hover:underline font-semibold">view our products here</a> or reach us directly.</p>
+                        <a href="mailto:sales@naturebloom.com" class="btn-primary text-white font-bold py-3 px-10 rounded-full text-lg inline-block">
+                            Inquire About Products
+                        </a>
+                    </div>
+                    <div class="mt-8">
+                        <h2 class="text-4xl font-bold text-heading-dark mb-6">Book a Consultation</h2>
+                        <p class="text-gray-700 mb-6">Interested in a personalized skincare consultation? Reach out to us via the form or call us to schedule your appointment.</p>
+                        <a href="mailto:booking@naturebloom.com" class="btn-primary text-white font-bold py-3 px-10 rounded-full text-lg inline-block">
+                            Email to Book
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section (Consistent with other pages) -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-8 text-center">
+            <p class="mb-6 text-lg">&copy; 2025 NatureBloom Organics. All rights reserved.</p>
+            <div class="flex justify-center space-x-10 text-lg mb-8">
+                <a href="#" class="hover:text-white transition duration-300">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition duration-300">Terms of Service</a>
+                <a href="#" class="hover:text-white transition duration-300">FAQ</a>
+                <a href="https://naturebloomorganicsblog.com" target="_blank" rel="noopener noreferrer" class="hover:text-white transition duration-300">Our Blog</a>
+            </div>
+            <div class="text-md">
+                Follow Us:
+                <div class="flex justify-center space-x-6 mt-4">
+                    <a href="#" class="text-gray-400 hover:text-white text-2xl transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white text-2xl transition duration-300"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white text-2xl transition duration-300"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

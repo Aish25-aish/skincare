@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Products - NatureBloom Organics</title>
+    <meta name="description" content="Explore NatureBloom Organics' featured organic skincare products. Discover our rejuvenating serums, hydrating creams, cleansing balms, and more.">
+    <meta name="keywords" content="organic skincare, natural products, face serum, day cream, cleansing balm, repair mask, botanical toner, eye cream, NatureBloom Organics products, buy skincare online">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Playfair Display for headings, Lato for body text -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for social media icons (if needed in footer/header) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif; /* Body text font */
+            background-color: #f8fafc; /* Very light, cool-toned background for a modern feel */
+            color: #333; /* Soft dark gray for body text */
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif; /* Headings font */
+        }
+        .text-brand-green {
+            color: #6a994e; /* Consistent sophisticated green */
+        }
+        .text-heading-dark {
+            color: #2c3e50; /* Darker, richer text color for headings */
+        }
+        .rounded-3xl-custom {
+            border-radius: 1.5rem; /* Even larger, softer rounded corners */
+        }
+        .shadow-soft {
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); /* Very soft, diffused shadow */
+        }
+        .shadow-soft-hover:hover {
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12); /* Slightly more pronounced on hover */
+        }
+        .btn-secondary {
+            background-color: #f0f4f8; /* Light background for secondary buttons */
+            color: #6a994e;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+        .btn-secondary:hover {
+            background-color: #e2e8f0;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary {
+            background-color: #6a994e; /* A sophisticated, muted green */
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Softer shadow */
+        }
+        .btn-primary:hover {
+            background-color: #5b8443; /* Darker on hover */
+            transform: translateY(-2px); /* Subtle lift */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased">
+
+    <!-- Header Section (Copied from index.html for consistency) -->
+    <header class="bg-white py-5 shadow-soft sticky top-0 z-50">
+        <div class="container mx-auto px-8 flex justify-between items-center">
+            <!-- Logo Image and Brand Name -->
+            <a href="index.html" class="flex items-center group">
+                <img src="https://www.creativefabrica.com/wp-content/uploads/2021/12/01/Skincare-Logo-Design-Graphics-21027148-2-580x387.png" alt="NatureBloom Organics Logo" class="h-14 mr-4 rounded-lg shadow-md transition-transform duration-300 group-hover:scale-105">
+                <span class="text-3xl font-extrabold text-heading-dark tracking-tight">NatureBloom Organics</span>
+            </a>
+            <nav>
+                <ul class="flex space-x-10">
+                    <li><a href="index.html" class="text-gray-700 hover:text-brand-green font-medium text-lg transition duration-300 ease-in-out">Home</a></li>
+                    <li><a href="#" class="text-brand-green font-medium text-lg transition duration-300 ease-in-out">Products</a></li>
+                    <li><a href="index.html" class="text-gray-700 hover:text-brand-green font-medium text-lg transition duration-300 ease-in-out">About Us</a></li>
+                    <li><a href="contact.html" class="text-gray-700 hover:text-brand-green font-medium text-lg transition duration-300 ease-in-out">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content - Featured Products Section -->
+    <main class="flex-grow py-20 bg-gray-50">
+        <div class="container mx-auto px-8 text-center">
+            <h1 class="text-5xl font-bold text-heading-dark mb-8">Our Featured Products</h1>
+            <p class="text-xl text-gray-700 max-w-3xl mx-auto mb-12">
+                Discover our curated selection of organic skincare essentials. For more information, visit our <a href="index.html" class="text-brand-green hover:underline font-semibold">Home page</a>.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <!-- Product Card 1: Rejuvenating Face Serum -->
+                <div class="bg-white p-8 rounded-3xl-custom shadow-soft hover:shadow-soft-hover transition-all duration-300 flex flex-col items-center">
+                    <img src="https://ishalife.sadhguru.org/media/catalog/product/1/_/1_202.jpg" alt="Rejuvenating Face Serum" class="w-full h-48 object-cover mb-6 rounded-2xl-custom">
+                    <h3 class="text-3xl font-semibold text-heading-dark mb-3">Rejuvenating Face Serum</h3>
+                    <p class="text-gray-600 mb-4 flex-grow">A potent blend of natural oils and extracts to restore youthful radiance.</p>
+                    <p class="text-2xl font-bold text-brand-green mb-6">$49.99</p>
+                    <div class="flex space-x-4 w-full justify-center">
+                        <button class="btn-secondary py-3 px-6 rounded-full text-lg font-semibold flex-1">Add to Cart</button>
+                        <a href="contact.html" class="btn-primary py-3 px-6 rounded-full text-lg font-semibold flex-1 flex items-center justify-center">Buy Now</a>
+                    </div>
+                </div>
+
+                <!-- Product Card 2: Hydrating Day Cream -->
+                <div class="bg-white p-8 rounded-3xl-custom shadow-soft hover:shadow-soft-hover transition-all duration-300 flex flex-col items-center">
+                    <img src="https://www.ivorynatural.com/cdn/shop/files/Day_Face_Cream_with_SPF_30_FACE_CREAM_Template_Images_of_MASK_-min.jpg?v=1716637468&width=3200" alt="Hydrating Day Cream" class="w-full h-48 object-cover mb-6 rounded-2xl-custom">
+                    <h3 class="text-3xl font-semibold text-heading-dark mb-3">Hydrating Day Cream</h3>
+                    <p class="text-gray-600 mb-4 flex-grow">Lightweight and deeply moisturizing, perfect for daily nourishment.</p>
+                    <p class="text-2xl font-bold text-brand-green mb-6">$34.50</p>
+                    <div class="flex space-x-4 w-full justify-center">
+                        <button class="btn-secondary py-3 px-6 rounded-full text-lg font-semibold flex-1">Add to Cart</button>
+                        <a href="contact.html" class="btn-primary py-3 px-6 rounded-full text-lg font-semibold flex-1 flex items-center justify-center">Buy Now</a>
+                    </div>
+                </div>
+
+                <!-- Product Card 3: Gentle Cleansing Balm -->
+                <div class="bg-white p-8 rounded-3xl-custom shadow-soft hover:shadow-soft-hover transition-all duration-300 flex flex-col items-center">
+                    <img src="https://images.squarespace-cdn.com/content/v1/6081248451205d2463e3e96c/1649241733101-TTQC4BJ5WC0JMKVV77WE/cleansing+balm+big+single.jpg?format=1000w" alt="Gentle Cleansing Balm" class="w-full h-48 object-cover mb-6 rounded-2xl-custom">
+                    <h3 class="text-3xl font-semibold text-heading-dark mb-3">Gentle Cleansing Balm</h3>
+                    <p class="text-gray-600 mb-4 flex-grow">Melts away impurities and makeup, leaving skin soft and clean.</p>
+                    <p class="text-2xl font-bold text-brand-green mb-6">$28.00</p>
+                    <div class="flex space-x-4 w-full justify-center">
+                        <button class="btn-secondary py-3 px-6 rounded-full text-lg font-semibold flex-1">Add to Cart</button>
+                        <a href="contact.html" class="btn-primary py-3 px-6 rounded-full text-lg font-semibold flex-1 flex items-center justify-center">Buy Now</a>
+                    </div>
+                </div>
+
+                <!-- Product Card 4: Overnight Repair Mask -->
+                <div class="bg-white p-8 rounded-3xl-custom shadow-soft hover:shadow-soft-hover transition-all duration-300 flex flex-col items-center">
+                    <img src="https://m.media-amazon.com/images/I/81fILR3SNHL._UF1000,1000_QL80_.jpg" alt="Overnight Repair Mask" class="w-full h-48 object-cover mb-6 rounded-2xl-custom">
+                    <h3 class="text-3xl font-semibold text-heading-dark mb-3">Overnight Repair Mask</h3>
+                    <p class="text-gray-600 mb-4 flex-grow">Wake up to revitalized skin with this intensely nourishing mask.</p>
+                    <p class="text-2xl font-bold text-brand-green mb-6">$39.00</p>
+                    <div class="flex space-x-4 w-full justify-center">
+                        <button class="btn-secondary py-3 px-6 rounded-full text-lg font-semibold flex-1">Add to Cart</button>
+                        <a href="contact.html" class="btn-primary py-3 px-6 rounded-full text-lg font-semibold flex-1 flex items-center justify-center">Buy Now</a>
+                    </div>
+                </div>
+
+                <!-- Product Card 5: Botanical Toner -->
+                <div class="bg-white p-8 rounded-3xl-custom shadow-soft hover:shadow-soft-hover transition-all duration-300 flex flex-col items-center">
+                    <img src="https://www.bigbasket.com/media/uploads/flatpages/pd/40208230-07.jpg" alt="Botanical Toner" class="w-full h-48 object-cover mb-6 rounded-2xl-custom">
+                    <h3 class="text-3xl font-semibold text-heading-dark mb-3">Botanical Toner</h3>
+                    <p class="text-gray-600 mb-4 flex-grow">Balances and preps skin, infused with soothing floral waters.</p>
+                    <p class="text-2xl font-bold text-brand-green mb-6">$22.75</p>
+                    <div class="flex space-x-4 w-full justify-center">
+                        <button class="btn-secondary py-3 px-6 rounded-full text-lg font-semibold flex-1">Add to Cart</button>
+                        <a href="contact.html" class="btn-primary py-3 px-6 rounded-full text-lg font-semibold flex-1 flex items-center justify-center">Buy Now</a>
+                    </div>
+                </div>
+
+                <!-- Product Card 6: Eye Cream with Green Tea -->
+                <div class="bg-white p-8 rounded-3xl-custom shadow-soft hover:shadow-soft-hover transition-all duration-300 flex flex-col items-center">
+                    <img src="https://i5.walmartimages.com/asr/f050710d-7a91-4fb2-9b2f-0e1f34cf184a.41e399f7a190962c40a9d87d2735781b.jpeg" alt="Eye Cream with Green Tea" class="w-full h-48 object-cover mb-6 rounded-2xl-custom">
+                    <h3 class="text-3xl font-semibold text-heading-dark mb-3">Eye Cream with Green Tea</h3>
+                    <p class="text-gray-600 mb-4 flex-grow">Reduces puffiness and dark circles for bright, refreshed eyes.</p>
+                    <p class="text-2xl font-bold text-brand-green mb-6">$31.99</p>
+                    <div class="flex space-x-4 w-full justify-center">
+                        <button class="btn-secondary py-3 px-6 rounded-full text-lg font-semibold flex-1">Add to Cart</button>
+                        <a href="contact.html" class="btn-primary py-3 px-6 rounded-full text-lg font-semibold flex-1 flex items-center justify-center">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section (Consistent with other pages) -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-8 text-center">
+            <p class="mb-6 text-lg">&copy; 2025 NatureBloom Organics. All rights reserved.</p>
+            <div class="flex justify-center space-x-10 text-lg mb-8">
+                <a href="#" class="hover:text-white transition duration-300">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition duration-300">Terms of Service</a>
+                <a href="#" class="hover:text-white transition duration-300">FAQ</a>
+                <a href="https://naturebloomorganicsblog.com/skincare-tips" target="_blank" rel="noopener noreferrer" class="hover:text-white transition duration-300">Skincare Tips Blog</a>
+            </div>
+            <div class="text-md">
+                Follow Us:
+                <div class="flex justify-center space-x-6 mt-4">
+                    <a href="#" class="text-gray-400 hover:text-white text-2xl transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white text-2xl transition duration-300"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white text-2xl transition duration-300"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
